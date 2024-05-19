@@ -1,0 +1,537 @@
+*{
+    max-width: 960px;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+    text-decoration: none;
+    font-family:Arial, Helvetica, sans-serif;
+    font-family: "Anuphan", sans-serif;
+    font-style: normal;
+    
+}
+
+
+
+
+
+
+@media screen and (max-width: 534px) {
+    .header img{
+        display: none;
+    }
+    .header .name1
+    {   
+        font-size: small;
+    }
+    .footer
+    {
+        display: grid;
+        font-size: smaller;
+    }
+    .footer .footer-icon a{
+      display: none;
+    }
+  }
+  @media screen and (max-width: 404px) {
+    .footer
+    {
+        font-size: x-small;
+    }
+    .footer .footer-icon a{
+      display: none;
+    }
+  }
+
+.container
+{
+    /* border: 1px solid red;     */
+    width: 100%;
+    margin: 0 auto;
+    /* padding:1rem; */
+    position: relative;
+}
+
+/* Header */
+.header
+{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    box-shadow: 2px 2px 2px hsl(0, 11%, 68%);
+    border-radius: 15px;
+    background-color: rgb(75, 83, 32);
+    color: white;
+    margin-top: .8rem;
+    padding: .5rem;
+}
+.header .img1 img
+{
+    width:  100px;
+    height: 100px;
+
+}
+.header .img2 img
+{
+    width:  120px;
+    height: 100px;
+
+}
+/* footer */
+.footer {
+    width: 100%;
+    margin-top: .5rem;
+    margin-bottom: .8rem;
+    padding-top: .8rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    box-shadow: 2px 2px 2px hsl(0, 11%, 68%);
+    border-radius: 15px;
+    background-color: rgb(75, 83, 32);
+    color: white;
+    text-align: center;
+    justify-content: center;
+    
+  }
+
+  .footer .footer-icon i{
+    position: relative;
+    bottom: 5%;
+    font-size: 3rem;
+    color: blue;
+    /* background-color:white;   */
+    
+  }
+.footer .footer-text
+{
+  padding-left: 2rem;
+  color: white
+}
+
+/* เมนู */
+.menu
+{
+    width: 100%;
+    height: 25rem;
+    margin: 10px 0;
+    height: auto;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-size: 1.2rem;
+    color:hsl(0, 80%, 49%);
+    font-weight: bold;
+    
+} 
+.menu .museum , .memorial , .library
+{
+    width: 18%;
+    background-color: hsla(115, 83%, 38%, 0.514);
+    border-radius: 1rem;
+    color: hsl(180, 7%, 97%);
+    border: transparent;
+    box-shadow: 2px 2px 0px hsl(0, 11%, 68%);
+    
+}
+.museum:hover , .memorial:hover , .library:hover
+{
+    background-color: hsl(132, 14%, 72%);
+    color: red;
+}
+
+/* การ์ด */
+.card-con
+{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    justify-content: space-around;
+    align-items: center;
+    column-gap: 1rem;
+    row-gap: 3rem;
+}
+.card-body
+{
+    /* background-color: red; */
+    margin-top: 1rem;
+    width: 17rem;
+    height: 11rem;
+    border-radius: 15px;
+    position: relative;
+    box-shadow: 0px 1px 1px black;
+    
+}
+.card-bg img
+{
+    border-radius: 15px;
+    width: 17rem;
+    height: 11rem;
+}
+.card-bg p
+{
+    position: absolute;
+    text-align: center;
+    color: hsl(0, 80%, 49%);
+    font-weight: bold;
+    left: 5%;
+    bottom: 5%;
+}
+/* การ์ด */
+
+
+/* Dropdown */
+
+  .dropdown-content 
+  {
+    display: none;
+    width: 100%;
+    border-radius: 15px;
+  }
+  
+  .dropdown-content a {
+    text-decoration: none;
+    position: absolute;
+    color: rgb(75, 83, 32);
+    right: 0%;
+    font-size: 2rem;
+    }
+
+  .dropdown-content audio
+  {
+    position: absolute;
+    width: 90%;
+    height: 20%;
+    
+  }
+  audio::-webkit-media-controls-panel {
+    background-color: hsla(0, 0%, 91%, 0.87)
+  }
+
+
+  .card-body:hover .dropdown-content {display: grid;}
+  
+  .card-body:hover
+  {
+    transform: scale(1.1);
+  }
+  
+/* Dropdown */
+
+
+/* pick */
+.pick
+{
+  display: grid;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  grid-template-columns: repeat(auto-fill,minmax(135px,1fr));
+  grid-gap: 15px;
+  
+}
+
+.item
+{
+
+width: 7rem;
+height: 7rem;
+box-sizing: border-box;
+/* background-color:hsl(0, 80%, 49%); */
+border-radius: 20px;
+position: relative;
+background-image: url(https://technicalaffairs-dic.rta.mi.th/wp-content/uploads/2024/05/ras006-green-army-camoflauge-world-of-wallpaper-ae1.jpg);
+background-size: auto;
+}
+
+/* #item1 , #item3 ,#item5 , #item7 ,#item9 , #item11 ,#item13 , #item15 ,#item17 , #item19 ,#item21 , #item23 ,#item25 , #item27 ,#item29
+{
+  background-color:rgb(165, 25, 49);
+}
+#item2 , #item4 ,#item6 , #item8 ,#item10 , #item12 ,#item14 , #item16 ,#item18 , #item20 ,#item22 , #item24 ,#item26 , #item28 ,#item30
+{
+  background-color:rgb(75, 83, 32);
+} */
+.item a
+{
+  font-size: 1.2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-weight: bolder;
+  transform: translate(-50% , -50%);
+  color: hsl(0, 0%, 0%);
+}
+.item:hover
+{
+  transform: scale(1.05);
+}
+
+.item a:hover
+{
+  color: white;
+
+}
+
+.actionbutton
+{
+  width: 36%;
+  display: grid;
+  position: relative;
+  /* grid-template-columns: repeat(auto-fill,minmax(80px,1fr)); */
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 4rem;
+  /* background-color: aqua; */
+}
+.actionbutton a
+{
+  color: hsl(0, 80%, 50%);
+  font-size: 2rem;
+  /* position: absolute; */
+  
+}
+
+.boxtitle h3
+{
+  text-align: center;
+  color:white;
+}
+.floor
+{
+  width: 100%;
+  background-color: hsl(0, 80%, 49%);
+  justify-content: start;
+  border-radius: 15px;
+  padding: 0;
+  margin: 0;
+}
+#floor1 h4
+{
+  text-align: center;
+  padding: 1rem;
+  margin-top: 1rem;
+  color: white;
+}
+
+#floor2 , #floor3 h4
+{
+  text-align: center;
+  margin-top: 4rem;
+  padding: 1rem;
+  color: white;
+}
+
+.boxtitle
+{
+  width: fit-content;
+  margin-top: 2rem;
+  background-color: hsl(0, 80%, 49%);
+  padding: 1rem;
+  border-radius: 15px;
+}
+
+.actionbutton2
+{
+  width: 24%;
+  display: grid;
+  position: relative;
+  /* grid-template-columns: repeat(auto-fill,minmax(80px,1fr)); */
+  grid-template-columns: 1fr 1fr;
+  margin-top: 4rem;
+  /* background-color: aqua; */
+}
+.actionbutton2 a
+{
+  color: hsl(0, 80%, 50%);
+  font-size: 2rem;
+  /* position: absolute; */
+  
+}
+
+/* spencer carbine 5 */
+/* #spencerCarbine
+{
+position: absolute;
+height: 25%;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+#drop-spencer
+{
+position: absolute;
+top:101%
+}
+#a-spencer
+{
+position: absolute;
+top:101%
+} */
+
+/* remington 5 */
+
+/* #i-remington
+{
+position: absolute;
+height: 50%;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+#s-remington
+{
+position: absolute;
+top:101%
+}
+#a-remington
+{
+position: absolute;
+top:101%
+} */
+
+/* colt 1855 */
+
+/* #i-colt1855
+{
+position: absolute;
+height: 50%;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+#s-colt1855
+{
+position: absolute;
+top:101%
+}
+#a-colt1855
+{
+position: absolute;
+top:101%
+} */
+
+
+/* card2 */
+.card-body2
+{
+    margin-top: 1rem;
+    width: 17rem;
+    height: 11rem;
+    border-radius: 15px;
+    position: relative;
+    background-color: hsl(0, 5%, 85%);
+    box-shadow: 0px 1px 1px black;
+}
+
+.card-body2:hover .dropdown-content {display: grid;}
+  
+.card-body2:hover
+{
+  transform: scale(1.1);
+}
+
+.card-body2 .card-bg img
+
+  {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+.card-body2 .dropdown-content audio 
+{
+    position: absolute;
+    top:101%
+}
+.card-body2 .dropdown-content a 
+{
+    position: absolute;
+    top:101%
+}
+/* card2 */
+
+/* dropdown-content2 */
+
+.dropdown-content2 
+{
+  display: flex;
+  width: 100%;
+  border-radius: 15px;
+}
+
+.dropdown-content2 a {
+  width: 80%;
+  height: 2rem;
+  display: none;
+  text-decoration: none;
+  position: absolute;
+  color: red;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 15px;
+  margin-top: 2.25px;
+  text-align:center;
+  align-items: center;
+  background-color: hsl(0, 10%, 88%);
+  box-shadow: 0px 1px 1px black;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+  
+ }
+  .dropdown-content2 i 
+  {
+    display: none;
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    font-size: 1.25rem;
+  }
+/* dropdown-content2 */
+
+/* card3 */
+.card-body3
+{
+    margin-top: 1rem;
+    width: 17rem;
+    height: 11rem;
+    border-radius: 15px;
+    position: relative;
+    background-color: hsl(0, 5%, 85%);
+    box-shadow: 0px 1px 1px black;
+}
+
+.card-body3:hover .dropdown-content2 a {display: grid;}
+  
+.card-body3:hover
+{
+  transform: scale(1.1);
+}
+
+.card-body3 .card-bg img
+
+  {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+.card-body3 .dropdown-content2 audio 
+{
+    position: absolute;
+    top:101%
+}
+.card-body3 .dropdown-content2 a 
+{
+    position: absolute;
+    top:100%        
+}
+/* card3 */
