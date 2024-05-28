@@ -197,11 +197,18 @@
   .dropdown-content a {
     text-decoration: none;
     position: absolute;
-    color: rgb(75, 83, 32);
+    color: transparent;
     right: 0%;
-    font-size: 2rem;
+    font-size: 1px;
     }
 
+    .dropdown-content i {
+      text-decoration: none;
+      position: absolute;
+      color: rgb(75, 83, 32);
+      right: 0%;
+      font-size: 2rem;
+      }
   .dropdown-content audio
   {
     position: absolute;
